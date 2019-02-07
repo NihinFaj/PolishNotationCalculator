@@ -59,6 +59,10 @@ public class polishParser
                     output = valA * valB;
                     stack.push(output);
                 }
+                else if(trimmedInput[i].equals("/")) {
+                    output = valA / valB;
+                    stack.push(output);
+                }
             }
         }
 
